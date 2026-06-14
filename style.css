@@ -628,7 +628,7 @@ canvas {
 }
 .footer {
 
-    background: var(--khu-blue);
+    background: #4C0112;
 
     color: white;
 
@@ -1540,7 +1540,7 @@ html {
 .footer {
     text-align: center;
     padding: 50px 20px;
-    background: #A40F16;
+    background: #4C0112;
     color: white;
 }
 
