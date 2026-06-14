@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기준은 충족했지만, 정말 사용하기 편리할까?</title>
+
+    <!-- Pretendard 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+
+    <div class="nav-logo">
+
+    <img src="images/khu_logo.png" alt="Kyung Hee University Logo">
+
+    <div class="logo-text">
+        <span class="logo-title">KIOSK PROJECT</span>
+        <span class="logo-subtitle">
+            Kyung Hee University
+        </span>
+    </div>
+
+</div>
+
+    <ul class="nav-menu">
+
+        <li><a href="#problem">조사 배경</a></li>
+
+        <li><a href="#timeline">조사 과정</a></li>
+
+        <li><a href="#research">조사 결과</a></li>
+
+        <li><a href="#improvement">개선 방안</a></li>
+
+        <li><a href="#conclusion">결론</a></li>
+
+        
+
+    </ul>
+
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <img src="images/khu_logo.png" alt="경희대학교 로고" class="hero-logo">
+
+            <p class="hero-subtitle">
+                경희대학교 인근 키오스크 접근성 실태조사
+            </p>
+
+            <h1>
+                기준은 충족했지만,<br>
+                <span>정말 사용하기 편리할까?</span>
+            </h1>
+
+            <p class="hero-description">
+                형식적 접근성 준수와 실제 사용성 사이의 간극
+            </p>
+
+            <div class="scroll-indicator">
+                ↓ Scroll to Explore ↓
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 문제 인식 단계 -->
+<div class="section-group group-problem">
+    <section id="problem" class="content-section fade-in">
+
+        <div class="section-title">
+            왜 이 문제를 조사했을까?
+            <section class="content-section">
+
+    <div class="section-title">
+        실제 사용자들은 어떻게 느끼고 있을까?
+    </div>
+
+    <div class="news-grid">
+
+        <a href="https://www.joongang.co.kr/article/25357658"
+           target="_blank"
+           class="news-card">
+
+            <div class="news-source">
+                중앙일보 · 2025.08
+            </div>
+
+            <h3>
+                장애인에겐 너무 어려운 키오스크…
+                시각장애인 70% "직원에게 주문할래요"
+            </h3>
+
+            <p>
+                조사 대상 277명 중 58.1%가 키오스크 이용에
+                불편함을 경험했으며,
+                44.8%는 직원 주문을 선호했다.
+            </p>
+
+        </a>
+
+        <a href="https://www.humanrights.go.kr/webzine/webzineListAndDetail?issueNo=7609030&boardNo=7609017"
+           target="_blank"
+           class="news-card">
+
+            <div class="news-source">
+                국가인권위원회 · 2023
+            </div>
+
+            <h3>
+                장애인도 빅맥이 먹고 싶다
+            </h3>
+
+            <p>
+                장애인의 디지털 정보화 수준은 증가했지만,
+                실제 키오스크 접근권은 이를 따라가지 못하고 있다.
+            </p>
+
+        </a>
+
+        <a href="https://www.khan.co.kr/article/202602262109005"
+           target="_blank"
+           class="news-card">
+
+            <div class="news-source">
+                경향신문 · 2026
+            </div>
+
+            <h3>
+                배리어프리 키오스크 의무화 한 달
+                "쓰는 사람 못 봤다"
+            </h3>
+
+            <p>
+                설치는 늘어났지만 실제 사용성은
+                여전히 개선이 필요하다는 지적이 이어졌다.
+            </p>
+
+        </a>
+
+    </div>
+    </section>
+        </div>
+
+        <div class="text-container">
+
+            <p>
+                최근 배리어프리 키오스크 설치가 확대되고 있다.
+            </p>
+
+            <p>
+                하지만 실제 사용자들은 여전히 키오스크 사용에 어려움을 겪고 있다.
+            </p>
+
+            <p class="highlight">
+                우리는 제도적 개선이 실제 사용자 경험으로 이어지고 있는지 확인하고자 했다.
+            </p>
+
+        </div>
+
+    </section>
+</div>
+
+<!-- 조사 결과 -->
+<div class="section-group group-research">
+
+    <section id="timeline" class="content-section fade-in">
+    
+    <h2 class="section-title">우리는 어떻게 문제를 정의했을까?</h2>
+
+    <div class="timeline-flow">
+
+        <!-- 첫 번째 줄 -->
+        <div class="timeline-row">
+
+            <div class="timeline-card">
+                <h3>문제 제기</h3>
+                <p>키오스크는 모든 사람에게 편리할까?</p>
+            </div>
+
+            <div class="timeline-arrow">→</div>
+
+            <div class="timeline-card">
+                <h3>1차 어려움</h3>
+                <p>누구를 대상으로 조사해야 하는지 명확하지 않았다.</p>
+            </div>
+
+            <div class="timeline-arrow">→</div>
+
+            <div class="timeline-card">
+                <h3>방향 설정</h3>
+                <p>노약자 및 장애인을 주요 사용자로 설정하였다.</p>
+            </div>
+
+        </div>
+
+        <!-- 아래 화살표 -->
+        <div class="timeline-down-wrapper">
+            <div class="timeline-down-icon">
+                ↓
+            </div>
+        </div>
+
+        <!-- 두 번째 줄 -->
+        <div class="timeline-row">
+
+            <div class="timeline-card">
+                <h3>현장 조사</h3>
+                <p>경희대 인근 18개 매장을 직접 방문 조사하였다.</p>
+            </div>
+
+            <div class="timeline-arrow">→</div>
+
+            <div class="timeline-card">
+                <h3>2차 어려움</h3>
+                <p>생각보다 많은 매장이 기준을 충족하고 있었다.</p>
+            </div>
+
+            <div class="timeline-arrow">→</div>
+
+            <div class="timeline-card discovery-card">
+                <h3>핵심 발견</h3>
+                <p>
+                    기능의 존재 ≠<br>
+                    실제 사용 가능성
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- 법·제도 현황 -->
+    <section class="content-section fade-in">
+
+        <div class="section-title">
+            법·제도 현황
+        </div>
+
+        <div class="card-container">
+
+            <a href="https://www.law.go.kr/법령/장애인차별금지및권리구제등에관한법률시행령/(20260122,36005,20251231)/제10조의2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="law-card">
+
+            <h3>⚖️ 장애인차별금지법</h3>
+
+    <p>
+        장애인이 비장애인과 동등하게 무인정보단말기를 이용할 수 있도록
+        정당한 편의를 제공해야 함을 규정
+    </p>
+
+    <span class="law-link">
+        법령 확인하기 ↗
+    </span>
+
+</a>
+
+            <a href="https://standard.go.kr/KSCI/standardIntro/getStandardSearchView.do?menuId=919&topMenuId=502&upperMenuId=503&ksNo=KSX9211&tmprKsNo=KS_X_NEW_2015_1845&reformNo=01"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="law-card">
+
+    <h3>🏅 BF 인증 제도 (KS X 9211)</h3>
+
+    <p>
+        배리어프리 키오스크의 접근성 및 사용성 기준을 제시하는
+        국가표준 인증 제도
+    </p>
+
+    <span class="law-link">
+        인증 기준 보기 ↗
+    </span>
+
+</a>
+
+            <a href="https://www.kioskui.or.kr/index.do?menu_id=00001431"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="law-card">
+
+    <h3>🗺️ 배리어프리 키오스크 지도</h3>
+
+    <p>
+        전국에 설치된 배리어프리 키오스크의 위치와
+        관련 정보를 확인할 수 있는 플랫폼
+    </p>
+
+    <span class="law-link">
+        지도 확인하기 ↗
+    </span>
+
+</a>
+
+        </div>
+
+    </section>
+<section class="quote-section fade-in">
+
+    <blockquote>
+
+        “시각장애인 70%는
+        키오스크보다 직원에게 주문하는 것을 더 선호했다.”
+
+    </blockquote>
+
+    <p>
+
+        중앙일보 · 2025
+
+    </p>
+
+</section>
+
+    <!-- 조사 방법 -->
+    <section class="content-section">
+
+        <div class="section-title">
+            현장 조사
+        </div>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+
+                <h3>조사 대상</h3>
+
+                <p>
+                    경희대학교 인근 카페 및 음식점
+                </p>
+
+                <span class="number">18개 매장</span>
+
+            </div>
+
+            <div class="research-card">
+
+                <h3>접근성 조사</h3>
+
+                <ul>
+                    <li>음성 안내</li>
+                    <li>대면 주문 안내</li>
+                    <li>고대비 화면</li>
+                    <li>확대 기능</li>
+                    <li>낮은 화면</li>
+                </ul>
+
+            </div>
+
+            <div class="research-card">
+
+                <h3>사용성 조사</h3>
+
+                <ul>
+                    <li>주문 단계 수</li>
+                    <li>결제 방식 수</li>
+                    <li>첫 화면 메뉴 수</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="stats-section fade-in">
+
+    <div class="stat-card">
+
+        <h2>18</h2>
+
+        <p>직접 조사한<br>매장 수</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>58.1%</h2>
+
+        <p>장애인의<br>키오스크 이용 불편 경험</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>16.7%</h2>
+
+        <p>첫 화면 이용방법<br>제공 비율</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>44.4%</h2>
+
+        <p>음성 안내 기능<br>제공 비율</p>
+
+    </div>
+
+</section>
+    <section class="content-section fade-in">
+
+    <div class="section-title">
+        직접 현장을 조사했습니다
+    </div>
+
+    <p class="section-description">
+        경희대학교 인근 18개 매장을 직접 방문하여
+        키오스크 접근성과 사용성을 조사했습니다.
+    </p>
+
+    <div class="research-grid">
+
+        <div class="research-card">
+            <img src="images/research1.jpg" alt="현장조사 사진 1">
+
+            <div class="research-info">
+                <h3>실제 키오스크 조사</h3>
+
+                <p>
+                    매장별 접근성 기능 유무를 직접 확인하며
+                    데이터를 수집하였습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <img src="images/research2.jpg" alt="현장조사 사진 2">
+
+            <div class="research-info">
+                <h3>배리어프리 기능 점검</h3>
+
+                <p>
+                    음성 안내, 글자 크기,
+                    낮은 화면 기능 등을 확인하였습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <img src="images/research3.jpg" alt="현장조사 사진 3">
+
+            <div class="research-info">
+                <h3>현장 데이터 기록</h3>
+
+                <p>
+                    조사 기준표를 활용하여
+                    정량적 데이터를 구축하였습니다.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+</div>
+<!-- 분석 및 결론 -->
+ <div class="section-group group-analysis">
+    <section class="content-section fade-in">
+
+    <div class="section-title">
+        Raw Data & 조사 기준 공개
+    </div>
+
+    <p class="section-description">
+        본 연구에서 사용한 원자료와 조사 기준표를 공개합니다.
+        모든 데이터는 경희대학교 인근 18개 매장을 직접 방문하여 수집하였습니다.
+    </p>
+
+    <div class="data-grid">
+
+        <a href="https://docs.google.com/spreadsheets/d/1WrJpJXjYaKzHBetmrVCkxQq7iEXUzdd2NKYvxrPKGx4/edit?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="data-card">
+
+    <h3>📊 Raw Data (Google Sheets)</h3>
+
+    <p>
+        18개 매장의 키오스크 접근성 조사 결과
+    </p>
+
+    <span class="data-link">
+        원본 데이터 보기 ↗
+    </span>
+
+</a>
+
+        <a href="data/kiosk_raw_data.csv"
+           download
+           class="data-card">
+
+            <h3>📁 CSV 파일</h3>
+
+            <p>
+                분석에 사용된 원본 데이터
+            </p>
+
+        </a>
+
+        <a href="data/survey_criteria.pdf"
+           target="_blank"
+           class="data-card">
+
+            <h3>📋 조사 기준표</h3>
+
+            <p>
+                접근성 및 사용성 평가 기준
+            </p>
+
+        </a>
+
+    </div>
+
+    </section>
+
+
+    <!-- 데이터 분석 -->
+    <section id="research" class="content-section fade-in">
+
+        <div class="section-title">
+            현장 조사 결과
+        </div>
+
+        <div class="chart-section">
+
+            <div class="chart-card">
+
+                <h3>
+                    식품 vs 음료 접근성 비교
+                </h3>
+
+                <canvas id="accessibilityChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>
+                    전체 준수율
+                </h3>
+
+                <canvas id="complianceChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>
+                    사용성 비교
+                </h3>
+
+                <canvas id="usabilityChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </section>
+</div>  
+<!-- 개선 방안 -->
+<div class="section-group group-solution">
+    <!-- 반전 -->
+    <section class="surprise-section">
+
+        <p>하지만</p>
+
+        <h2>
+            생각보다 많은 키오스크가<br>
+            배리어프리 기준을 충족하고 있었다.
+        </h2>
+
+    </section>
+
+    <!-- 핵심 메시지 -->
+    <section class="core-message">
+
+        <div class="core-content">
+
+            <h2>
+                기능의 존재
+
+                <span>≠</span>
+
+                실제 사용 가능성
+            </h2>
+
+            <p>
+                배리어프리 기능이 존재한다고 해서
+                실제 접근성이 보장되는 것은 아니었다.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- 개선 방안 -->
+<section id="improvement" class="content-section fade-in">
+    <h2 class="section-title">개선 방안</h2>
+
+    <div class="improvement-container">
+
+        <!-- 즉시 도입 -->
+        <div class="improvement-group urgent">
+
+            <div class="group-header">
+                <span class="group-icon">🔥</span>
+                <h3>즉시 도입 필요</h3>
+            </div>
+
+            <div class="improvement-grid">
+
+                <div class="improvement-card">
+                    <h4>🔊 음성 안내 기능 의무화</h4>
+                    <span class="stakeholder government">정부 · 제조사</span>
+                </div>
+
+                <div class="improvement-card">
+                    <h4>🙋 직원 호출 기능 확대</h4>
+                    <span class="stakeholder store">매장 운영자</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 단기 개선 -->
+        <div class="improvement-group short-term">
+
+            <div class="group-header">
+                <span class="group-icon">⚡</span>
+                <h3>단기 개선 과제</h3>
+            </div>
+
+            <div class="improvement-grid">
+
+                <div class="improvement-card">
+                    <h4>🔍 글자 크기 확대 기능 기본 제공</h4>
+                    <span class="stakeholder company">제조사</span>
+                </div>
+
+                <div class="improvement-card">
+                    <h4>🎨 고대비 모드 도입</h4>
+                    <span class="stakeholder company">제조사</span>
+                </div>
+
+                <div class="improvement-card">
+                    <h4>📏 화면 높이 표준화</h4>
+                    <span class="stakeholder company">제조사</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 장기 개선 -->
+        <div class="improvement-group long-term">
+
+            <div class="group-header">
+                <span class="group-icon">🌱</span>
+                <h3>장기 개선 방향</h3>
+            </div>
+
+            <div class="improvement-grid">
+
+                <div class="improvement-card">
+                    <h4>👴 고령자용 간편 모드 제공</h4>
+                    <span class="stakeholder company">제조사</span>
+                </div>
+
+                <div class="improvement-card">
+                    <h4>🧩 메뉴 구성 및 인터페이스 표준화</h4>
+                    <span class="stakeholder all">정부 · 제조사 · 매장</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+</div>    
+    <!-- 결론 강조 -->
+    <section id="conclusion" class="content-section fade-in">
+    <h2 class="section-title">우리의 결론</h2>
+
+    <div class="conclusion-wrapper">
+
+        <div class="conclusion-quote-box">
+
+            <span class="quote-icon quote-left">"</span>
+
+            <h3 class="conclusion-quote">
+
+            배리어프리 기능의 존재만으로는<br>
+            <span style="color:#FFD76A;">
+            실제 접근성이 보장되지 않는다.
+            </span>
+
+            </h3>
+
+            <span class="quote-icon quote-right">"</span>
+
+
+        </div>
+
+        <div class="conclusion-grid">
+
+            <div class="conclusion-card">
+
+                <div class="card-icon">🔍</div>
+
+                <h3>주요 발견</h3>
+
+                <ul>
+                    <li>기준 충족률은 예상보다 높았다.</li>
+                    <li>실제 사용성은 여전히 낮았다.</li>
+                    <li><strong>기능의 존재 ≠ 접근성 보장</strong></li>
+                </ul>
+
+            </div>
+
+            <div class="conclusion-card">
+
+                <div class="card-icon">⚠️</div>
+
+                <h3>문제점</h3>
+
+                <ul>
+                    <li>이용 방법 안내 부족</li>
+                    <li>음성 안내 기능 미제공</li>
+                    <li>복잡한 주문 과정</li>
+                    <li>사용자 중심 평가 부재</li>
+                </ul>
+
+            </div>
+
+            <div class="conclusion-card">
+
+                <div class="card-icon">💡</div>
+
+                <h3>개선 방향</h3>
+
+                <ul>
+
+                    <li>음성 안내 기능 의무화</li>
+
+                    <li>글자 크기 확대 기능 기본 제공</li>
+
+                    <li>고대비 모드 도입</li>
+
+                    <li>화면 높이 표준화</li>
+
+                    <li>직원 호출 기능 확대</li>
+
+                    <li>고령자용 간편 모드 제공</li>
+
+                    <li>메뉴 구성 및 인터페이스 표준화</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- 결론 -->
+    <section class="conclusion">
+
+        <h2>
+            우리는 발견했다.
+        </h2>
+
+        <p>
+            배리어프리 기능의 존재만으로는 충분하지 않았다.
+        </p>
+
+        <p>
+            사용자 중심 설계와 실효성 있는 제도 개선이 필요하다.
+        </p>
+
+    </section>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+<canvas id="myChart"></canvas>
+
+<footer class="footer">
+
+    <p>
+        경희대학교 키오스크 접근성 연구 프로젝트
+    </p>
+
+    <p>
+        데이터액티비즘 | 2026
+    </p>
+
+</footer>
+<footer class="footer">
+    <p>
+        본 연구는 경희대학교 학생들의 현장 조사와 공공 데이터를 기반으로 작성되었습니다.
+    </p>
+
+    <p>
+        © 2026 Kyung Hee University | Barrier-Free Kiosk Research Team
+    </p>
+</footer>
+
+
