@@ -1540,7 +1540,7 @@ html {
 .footer {
     text-align: center;
     padding: 50px 20px;
-    background: #0D326F;
+    background: #A40F16;
     color: white;
 }
 
@@ -1556,13 +1556,13 @@ html {
 .data-link {
     display: inline-block;
     margin-top: 15px;
-    color: #0D326F;
+    color: #650118;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .data-card:hover .data-link {
-    color: #A40F16;
+    color: #650118;
 }
 .raw-data-btn {
 
