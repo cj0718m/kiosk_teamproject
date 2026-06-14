@@ -1556,13 +1556,13 @@ html {
 .data-link {
     display: inline-block;
     margin-top: 15px;
-    color: #650118;
+    color: #4C0112;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .data-card:hover .data-link {
-    color: #650118;
+    color: #4C0112;
 }
 .raw-data-btn {
 
