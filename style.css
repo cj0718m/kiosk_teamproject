@@ -366,13 +366,115 @@ canvas {
     }
 }
 .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.news-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0D326F;
+    transition: all 0.3s ease;
+}
+
+.news-card:hover .news-link {
+    color: #A40F16;
+}
+
+.summary-grid {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 30px;
+
+    margin: 60px 0;
+}
+
+.summary-card {
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.summary-icon {
+
+    font-size: 2rem;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.summary-card h3 {
+
+    color: var(--khu-blue);
+
+    margin-bottom: 20px;
+}
+
+.summary-number {
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    color: #A40F16;
+
+    margin-bottom: 20px;
+}
+
+.summary-highlight {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: #A40F16;
+
+    margin-bottom: 20px;
+
+    line-height: 1.4;
+}
+
+.summary-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .summary-number {
+
+        font-size: 2rem;
+    }
 }
 
 .news-card {
@@ -1235,6 +1337,8 @@ canvas {
     margin-bottom: 15px;
 
     font-size: 1.5rem;
+
+    white-space: nowrap;
 }
 
 .timeline-card p {
@@ -1614,4 +1718,9 @@ html {
 .law-card:hover .law-link {
 
     color: #A40F16;
+}
+.highlight-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
 }
