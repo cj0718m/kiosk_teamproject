@@ -368,7 +368,9 @@ canvas {
 .news-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .news-link {
@@ -812,7 +814,7 @@ canvas {
 
     max-width: 900px;
 
-    margin: 100px auto;
+    margin: 40px auto;
 
     padding: 60px;
 
@@ -1723,4 +1725,245 @@ html {
     font-size: 1.15rem;
     font-weight: 700;
     text-align: center;
+}
+.problem-description {
+
+    max-width: 900px;
+
+    margin: 50px auto 80px auto;
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    color: #444;
+}
+
+.problem-description p {
+
+    margin-bottom: 25px;
+}
+.problem-highlight {
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    border-left: 6px solid #A40F16;
+
+    background: rgba(164, 15, 22, 0.05);
+
+    font-weight: 600;
+
+    color: #0D326F;
+}
+/* 조사 개요 */
+
+.survey-overview {
+
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.overview-item {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+
+    border-top: 4px solid #A40F16;
+}
+
+.overview-label {
+
+    display: block;
+
+    font-weight: 700;
+
+    color: #0D326F;
+
+    margin-bottom: 10px;
+}
+
+.overview-value {
+
+    color: #444;
+
+    line-height: 1.6;
+}
+
+
+/* 현장조사 설명 */
+
+.fieldwork-description {
+
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    font-size: 1.08rem;
+
+    line-height: 2;
+
+    color: #444;
+}
+
+.fieldwork-description p {
+
+    margin-bottom: 28px;
+}
+
+.fieldwork-description strong {
+
+    color: #0D326F;
+
+    font-weight: 700;
+}
+
+.fieldwork-highlight {
+
+    padding: 25px;
+
+    background: rgba(164, 15, 22, 0.05);
+
+    border-left: 5px solid #A40F16;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    color: #0D326F;
+}
+@media (max-width: 768px) {
+
+    .survey-overview {
+
+        grid-template-columns: 1fr;
+    }
+}
+.analysis-description {
+
+```
+max-width: 1050px;
+
+margin: 80px auto;
+
+line-height: 2;
+
+color: #444;
+```
+
+}
+
+.analysis-header {
+
+```
+text-align: center;
+
+margin-bottom: 60px;
+```
+
+}
+
+.analysis-header h3 {
+
+```
+font-size: 2rem;
+
+color: #0D326F;
+
+margin-bottom: 20px;
+```
+
+}
+
+.analysis-section {
+
+```
+margin-bottom: 60px;
+```
+
+}
+
+.analysis-section h4 {
+
+```
+color: #0D326F;
+
+font-size: 1.4rem;
+
+margin-bottom: 20px;
+```
+
+}
+
+.analysis-highlight {
+
+```
+background: rgba(164,15,22,0.08);
+
+border-left: 5px solid #A40F16;
+
+padding: 20px;
+
+border-radius: 10px;
+
+font-weight: 700;
+
+margin: 25px 0;
+```
+
+}
+
+.analysis-conclusion {
+
+```
+margin-top: 80px;
+
+padding: 40px;
+
+background: #f8f9fb;
+
+border-radius: 20px;
+
+text-align: center;
+```
+
+}
+
+.analysis-conclusion h4 {
+
+```
+color: #0D326F;
+
+margin-bottom: 25px;
+```
+
+}
+
+.conclusion-message {
+
+```
+font-size: 1.3rem;
+
+font-weight: 700;
+
+color: #A40F16;
+
+margin-top: 20px;
+```
+
 }

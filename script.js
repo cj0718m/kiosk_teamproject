@@ -8,30 +8,55 @@ const accessibilityCtx = document.getElementById('accessibilityChart');
 new Chart(accessibilityCtx, {
     type: 'bar',
 
+    plugins: [ChartDataLabels],
+
     data: {
-        labels: ['대면 주문 안내', '낮은 화면', '확대 기능'],
+        labels: [
+            '이용방법 안내',
+            '음성 안내',
+            '글자 크기 기준',
+            '뒤로가기 버튼'
+        ],
 
-        datasets: [
-            {
-                label: '식품',
+        datasets: [{
+            label: '제공 비율 (%)',
 
-                data: [85.7, 71.4, 85.7],
+            data: [16.7, 44.4, 77.8, 94.4],
 
-                backgroundColor: '#A40F16'
-            },
-
-            {
-                label: '음료',
-
-                data: [14.3, 28.6, 28.6],
-
-                backgroundColor: '#0D326F'
-            }
-        ]
+            backgroundColor: [
+                '#A40F16',
+                '#0D326F',
+                '#C0A353',
+                '#6B7280'
+            ]
+        }]
     },
 
     options: {
         responsive: true,
+
+        plugins: {
+
+    legend: {
+        display: false
+    },
+
+    datalabels: {
+        anchor: 'end',
+        align: 'top',
+
+        color: '#333',
+
+        font: {
+            weight: 'bold',
+            size: 13
+        },
+
+        formatter: function(value) {
+            return value + '%';
+        }
+    }
+},
 
         scales: {
             y: {
@@ -44,24 +69,22 @@ new Chart(accessibilityCtx, {
 const complianceCtx = document.getElementById('complianceChart');
 
 new Chart(complianceCtx, {
-    type: 'doughnut',
+    type: 'pie',
 
     data: {
         labels: [
-            '이용방법 안내',
-            '음성 안내',
-            '뒤로가기 버튼',
-            '글자 크기 기준 충족'
+            '10개 이하',
+            '11~20개',
+            '21개 이상'
         ],
 
         datasets: [{
-            data: [16.7, 44.4, 94.4, 77.8],
+            data: [6, 9, 3],
 
             backgroundColor: [
-                '#A40F16',
                 '#0D326F',
-                '#C0A353',
-                '#6B7280'
+                '#A40F16',
+                '#C0A353'
             ],
 
             borderWidth: 0
@@ -100,7 +123,7 @@ new Chart(complianceCtx, {
                 },
 
                 formatter: function(value) {
-                    return value + '%';
+                    return value + '곳';
                 }
             }
         }
@@ -111,62 +134,54 @@ const usabilityCtx = document.getElementById('usabilityChart');
 new Chart(usabilityCtx, {
     type: 'bar',
 
+    plugins: [ChartDataLabels],
+
     data: {
         labels: [
-            '주문 단계 수',
-            '결제 방식 수',
-            '첫 화면 메뉴 수'
+            '평균 주문 단계 수',
+            '평균 결제 방식 수'
         ],
 
-        datasets: [
-            {
-                label: '음료',
+        datasets: [{
+            label: '평균값',
 
-                data: [6.10, 5.90, 13.90],
+            data: [6.0, 5.1],
 
-                backgroundColor: '#0D326F'
-            },
-
-            {
-                label: '식품',
-
-                data: [5.88, 4.00, 12.38],
-
-                backgroundColor: '#A40F16'
-            }
-        ]
+            backgroundColor: [
+                '#A40F16',
+                '#0D326F'
+            ]
+        }]
     },
 
     options: {
         responsive: true,
 
-        plugins: {
-            legend: {
-                labels: {
-                    font: {
-                        family: 'Pretendard'
-                    }
-                }
-            }
+       plugins: {
+
+    legend: {
+        display: false
+    },
+
+    datalabels: {
+        anchor: 'center',
+        align: 'center',
+
+        color: '#fff',
+
+        font: {
+            weight: 'bold',
+            size: 13
         },
+        formatter: function(value) {
+                    return value + '개';
+                }
+    }
+},
 
         scales: {
             y: {
-                beginAtZero: true,
-
-                ticks: {
-                    font: {
-                        family: 'Pretendard'
-                    }
-                }
-            },
-
-            x: {
-                ticks: {
-                    font: {
-                        family: 'Pretendard'
-                    }
-                }
+                beginAtZero: true
             }
         }
     }
