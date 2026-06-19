@@ -1856,7 +1856,6 @@ html {
 }
 .analysis-description {
 
-```
 max-width: 1050px;
 
 margin: 80px auto;
@@ -1864,55 +1863,45 @@ margin: 80px auto;
 line-height: 2;
 
 color: #444;
-```
 
 }
 
 .analysis-header {
 
-```
 text-align: center;
 
 margin-bottom: 60px;
-```
 
 }
 
 .analysis-header h3 {
 
-```
 font-size: 2rem;
 
 color: #0D326F;
 
 margin-bottom: 20px;
-```
 
 }
 
 .analysis-section {
 
-```
 margin-bottom: 60px;
-```
 
 }
 
 .analysis-section h4 {
 
-```
 color: #0D326F;
 
 font-size: 1.4rem;
 
 margin-bottom: 20px;
-```
 
 }
 
 .analysis-highlight {
 
-```
 background: rgba(164,15,22,0.08);
 
 border-left: 5px solid #A40F16;
@@ -1924,13 +1913,11 @@ border-radius: 10px;
 font-weight: 700;
 
 margin: 25px 0;
-```
 
 }
 
 .analysis-conclusion {
 
-```
 margin-top: 80px;
 
 padding: 40px;
@@ -1940,23 +1927,19 @@ background: #f8f9fb;
 border-radius: 20px;
 
 text-align: center;
-```
 
 }
 
 .analysis-conclusion h4 {
 
-```
 color: #0D326F;
 
 margin-bottom: 25px;
-```
 
 }
 
 .conclusion-message {
 
-```
 font-size: 1.3rem;
 
 font-weight: 700;
@@ -1964,7 +1947,6 @@ font-weight: 700;
 color: #A40F16;
 
 margin-top: 20px;
-```
 
 }
 /* ===== 데이터 출처 및 분석 방법 ===== */
